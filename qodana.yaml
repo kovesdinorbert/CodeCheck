@@ -4,3 +4,5 @@ profile:
   name: qodana.recommended
   
 linter: jetbrains/qodana-dotnet:latest
+
+fixesStrategy: apply
