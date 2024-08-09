@@ -51,17 +51,17 @@ jobs:
           body: 'én, mint sonarqube javaslom eme javításokat'
           
       
-  qodana:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with: 
-          fetch-depth: 0
-      - name: 'qodana scan'
-        uses: jetbrains/qodana-action@v2023.3
-        with: 
-          args: --apply-fixes
-          pr-mode: false
-          push-fixes: pull-request
-        env:
-          qodana_token: ${{secrets.QODANA_TOKEN}}
+  # qodana:
+    # runs-on: ubuntu-latest
+    # steps:
+      # - uses: actions/checkout@v3
+        # with: 
+          # fetch-depth: 0
+      # - name: 'qodana scan'
+        # uses: jetbrains/qodana-action@v2023.3
+        # with: 
+          # args: --apply-fixes
+          # pr-mode: false
+          # push-fixes: pull-request
+        # env:
+          # qodana_token: ${{secrets.QODANA_TOKEN}}
