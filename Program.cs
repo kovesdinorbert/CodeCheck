@@ -54,6 +54,13 @@ namespace EIH.Common.POC.Common.MassTransit.TransactionOutbox.Consumer
                                 h.Password("artemis");
                                 h.UseSsl(false);
                             });
+                            //duplicate
+                            cfg.Host("localhost", h =>
+                            {
+                                h.Username("artemis");
+                                h.Password("artemis");
+                                h.UseSsl(false);
+                            });
 
                             // Add a receive endpoint (queue).
                             cfg.ReceiveEndpoint("a-queue", e =>
