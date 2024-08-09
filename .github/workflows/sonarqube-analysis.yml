@@ -52,7 +52,7 @@ jobs:
           
   create-pr:
     runs-on: ubuntu-latest
-    needs: build
+    needs: sonarqube
     steps:
     - name: Check out the code
       uses: actions/checkout@v3
