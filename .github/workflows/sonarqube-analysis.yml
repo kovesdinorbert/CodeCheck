@@ -32,6 +32,7 @@ jobs:
           dotnet build
           dotnet sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
           
+          
       # - name: Create Pull Request
         # uses: peter-evans/create-pull-request@v3
         # with:
