@@ -34,11 +34,11 @@ jobs:
           # dotnet sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
           
           
-      # - name: Create Pull Request
-        # uses: peter-evans/create-pull-request@v3
-        # with:
-          # token: ${{ secrets.GITHUB_TOKEN }}
-          # commit-message: 'SonarQube suggested fixes'
-          # title: 'SonarQube: Javasolt javítások'
-          # body: 'A SonarQube elemzés által javasolt automatikus javítások.'
-          # branch: sonarqube-fixes
+      - name: create pull request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'sonarqube suggested fixes'
+          title: 'sonarqube: javasolt javítások'
+          body: 'a sonarqube elemzés által javasolt automatikus javítások.'
+          branch: sonarqube-fixes
