@@ -44,11 +44,11 @@ jobs:
       - name: create pull request
         uses: peter-evans/create-pull-request@v3
         with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        commit-message: "Én a Sonar commitoltam ezen commitot"
-        branch: "sonarcloud-fixes"
-        title: "SonarCloud javasolt javítások"
-        body: 'én, mint sonarqube javaslom eme javításokat'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Én a Sonar commitoltam ezen commitot"
+          branch: "sonarcloud-fixes"
+          title: "SonarCloud javasolt javítások"
+          body: 'én, mint sonarqube javaslom eme javításokat'
           
   # create-pr:
     # runs-on: ubuntu-latest
