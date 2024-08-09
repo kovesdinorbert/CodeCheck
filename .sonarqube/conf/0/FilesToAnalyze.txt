@@ -1,0 +1,11 @@
+﻿/home/runner/work/CodeCheck/CodeCheck/Configuration.cs
+/home/runner/work/CodeCheck/CodeCheck/Consumers/MessageAConsumer.cs
+/home/runner/work/CodeCheck/CodeCheck/Consumers/MessageAConsumerDefinition.cs
+/home/runner/work/CodeCheck/CodeCheck/Contracts/MessageA.cs
+/home/runner/work/CodeCheck/CodeCheck/Db/ConsumerAppDbContext.cs
+/home/runner/work/CodeCheck/CodeCheck/Db/RecreateDatabaseHostedService.cs
+/home/runner/work/CodeCheck/CodeCheck/Program.cs
+/home/runner/work/CodeCheck/CodeCheck/.gitattributes
+/home/runner/work/CodeCheck/CodeCheck/.gitignore
+/home/runner/work/CodeCheck/CodeCheck/appsettings.json
+/home/runner/work/CodeCheck/CodeCheck/qodana.yaml
